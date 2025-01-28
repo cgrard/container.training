@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var redis = require('redis');
 
-const signals = ["SIGTERM"];
+const signals = ["SIGTERM", "SIGINT"];
 
 const shutdown = async => {
     console.log("Until we meet again...");
